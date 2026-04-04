@@ -27,7 +27,7 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
 
         /* Header */
-        .header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 20px 0; transition: all 0.4s ease; background: transparent; }
+        .header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 20px 0; transition: all 0.4s ease; background: rgba(250, 247, 242, 0.5); }
         .header.scrolled { background: rgba(250, 247, 242, 0.95); backdrop-filter: blur(20px); box-shadow: var(--shadow-sm); padding: 14px 0; }
         .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
         .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); }
@@ -43,7 +43,7 @@
         .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 26px; border-radius: var(--radius-full); font-weight: 600; font-size: 0.875rem; text-decoration: none; cursor: pointer; transition: all var(--transition); border: none; font-family: inherit; white-space: nowrap; }
         .btn-primary { background: var(--green); color: white; box-shadow: 0 2px 12px rgba(74, 124, 89, 0.3); }
         .btn-primary:hover { background: var(--green-dark); transform: translateY(-2px); }
-        .btn-outline { background: transparent; color: var(--green); border: 2px solid var(--green); }
+        .btn-outline { background: rgba(250, 247, 242, 0.5); color: var(--green); border: 2px solid var(--green); }
         .btn-outline:hover { background: var(--green); color: white; }
         .btn-white { background: white; color: var(--green); box-shadow: var(--shadow-md); }
         .btn-white:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
@@ -138,7 +138,7 @@
         .cta-content .section-title { color: white; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px; }
         .cta-content p { font-size: 1.05rem; opacity: 0.85; margin-bottom: 36px; line-height: 1.8; }
         .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-        .cta-buttons .btn-outline-white { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.5); }
+        .cta-buttons .btn-outline-white { background: rgba(250, 247, 242, 0.5); color: white; border: 2px solid rgba(255,255,255,0.5); }
         .cta-buttons .btn-outline-white:hover { background: rgba(255,255,255,0.15); border-color: white; }
 
         /* FAQ */
