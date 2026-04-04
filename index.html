@@ -52,24 +52,24 @@
         .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 8px; color: var(--text); }
 
         /* Hero */
-        .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; background: linear-gradient(160deg, var(--cream) 0%, var(--cream-dark) 50%, #EDE5D8 100%); }
+        .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; background: linear-gradient(160deg, rgba(44,36,22,0.85) 0%, rgba(44,36,22,0.75) 100%), url(hero-crochet.jpg) center/cover no-repeat; }
         .hero-bg { position: absolute; inset: 0; pointer-events: none; }
         .hero-blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.2; }
         .hero-blob-1 { width: 500px; height: 500px; background: var(--green); top: -150px; right: -100px; animation: floatBlob 18s ease-in-out infinite; }
         .hero-blob-2 { width: 350px; height: 350px; background: #C4A882; bottom: -100px; left: -80px; animation: floatBlob 14s ease-in-out infinite reverse; }
         @keyframes floatBlob { 0%, 100% { transform: translate(0, 0) scale(1); } 33% { transform: translate(20px, -30px) scale(1.05); } 66% { transform: translate(-15px, 15px) scale(0.97); } }
         .hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 0.9fr; gap: 80px; align-items: center; padding: 120px 0 80px; }
-        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(74, 124, 89, 0.1); color: var(--green); padding: 8px 18px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 24px; }
-        .hero-text h1 { font-size: clamp(2.5rem, 5.5vw, 4rem); color: var(--text); margin-bottom: 12px; letter-spacing: -0.02em; }
-        .hero-tagline { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; color: var(--green); margin-bottom: 20px; }
-        .hero-text p { font-size: 1.05rem; color: var(--text-secondary); max-width: 460px; margin-bottom: 36px; line-height: 1.85; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.15); color: white; padding: 8px 18px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.2); }
+        .hero-text h1 { font-size: clamp(2.5rem, 5.5vw, 4rem); color: white; margin-bottom: 12px; letter-spacing: -0.02em; }
+        .hero-tagline { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; color: rgba(255,255,255,0.85); margin-bottom: 20px; }
+        .hero-text p { font-size: 1.05rem; color: rgba(255,255,255,0.75); max-width: 460px; margin-bottom: 36px; line-height: 1.85; }
         .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
-        .hero-image-wrapper { position: relative; display: flex; justify-content: center; }
+        .hero-image-wrapper { display: none; }
         .hero-image-frame { position: relative; width: 100%; max-width: 440px; }
         .hero-image-main { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
         .hero-trust { display: flex; gap: 40px; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
-        .trust-value { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 700; color: var(--green); }
-        .trust-label { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+        .trust-value { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 700; color: white; }
+        .trust-label { font-size: 0.78rem; color: rgba(255,255,255,0.6); margin-top: 2px; }
 
         /* Marquee */
         .marquee { background: var(--green); padding: 14px 0; overflow: hidden; }
